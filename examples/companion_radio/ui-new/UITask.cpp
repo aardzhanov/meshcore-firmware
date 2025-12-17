@@ -73,6 +73,13 @@ public:
     display.setColor(UIColor::secondary_txt);
     display.setTextSize(1);
     display.drawTextCentered(display.width()/2, 48, FIRMWARE_BUILD_DATE);
+#ifdef OLED_RU
+    char filtered_date[sizeof(FIRMWARE_BUILD_DATE)];
+    display.translateUTF8ToBlocks(filtered_date, FIRMWARE_BUILD_DATE, sizeof(filtered_date));
+    display.drawTextCentered(display.width()/2, 42, filtered_date);
+#else
+    display.drawTextCentered(display.width()/2, 42, FIRMWARE_BUILD_DATE);
+#endif
 
     return 1000;
   }
