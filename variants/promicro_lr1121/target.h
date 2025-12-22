@@ -4,7 +4,7 @@
 #include <RadioLib.h>
 #include <helpers/radiolib/RadioLibWrappers.h>
 #include <PromicroBoard.h>
-#include <helpers/radiolib/CustomSX1262Wrapper.h>
+#include <helpers/radiolib/CustomLR1110Wrapper.h>
 #include <helpers/AutoDiscoverRTCClock.h>
 #ifdef DISPLAY_CLASS
   #include <helpers/ui/SSD1306Display.h>
@@ -12,6 +12,7 @@
 #endif
 
 #include <helpers/sensors/EnvironmentSensorManager.h>
+
 
 extern PromicroBoard board;
 extern WRAPPER_CLASS radio_driver;
