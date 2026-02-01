@@ -42,3 +42,6 @@
 #define LORA_MOSI SX126X_MOSI // Compatibility with variant file configuration structure
 #define LORA_MISO SX126X_MISO // Compatibility with variant file configuration structure
 #define LORA_DIO1 SX126X_DIO1 // Compatibility with variant file configuration structure
+
+#define PIN_NEOPIXEL            48
+#define NEOPIXEL_NUM            1
